@@ -1,0 +1,119 @@
+:root{
+    --preto: #0C0B0B;
+    --cinza: #0F0E0E;
+    --cinza-claro: #1B1B1B;
+    --branco: #B7B7B7;
+    --verde: #046313;
+    --azul: #044A7D;
+    --amarelo: #725200;
+    --roboto: 'Roboto', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body{
+    background-color: var(--preto);
+    font-family: var(--roboto);
+    color: var(--branco);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 35px 0;
+    background-color: var(--cinza);
+}
+
+.imagem-perfil{
+    width: 75px;
+    margin: 5px;
+    border-radius: 50px;
+}
+
+.titulo-nome{
+    font-weight: 700;
+    margin: 5px;
+}
+
+.nickname{
+    opacity: 75%;
+}
+
+.numero-status{
+    margin: 5px 0;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.botao-editar{
+    background-color: var(--cinza-claro);
+    display: block;
+    color: var(--branco);
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.icon{
+    margin-right: 10px;
+}
+
+.status{
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+.projetos{
+    background-color: var(--verde);
+}
+
+.seguidores{
+    background-color: var(--amarelo);
+}
+
+.estrelas{
+    background-color: var(--azul);
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+        width: 60%;
+    }
+
+    .card-status{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card-perfil{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .parte-um{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nickname{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .botao{
+        display: flex;
+        align-self: center;
+    }
+}
